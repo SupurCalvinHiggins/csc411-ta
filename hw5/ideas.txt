@@ -1,0 +1,67 @@
+
+register 0
+immediates
+large constants
+arithemtic instructions
+load word/half word/byte/sign extension
+store word/half word/byte/sign extension
+endianess
+labels
+conditional branches eq/ne/lt/ge/ltu/geu
+unconditional jumps jal/jalr/j
+while loops
+for loops
+if statements
+switches
+functions
+
+# Read RISC-V code 
+
+Low level
+
+form of instructions
+pseudo instructions
+labels
+
+Purpose of each register in calling convention
+
+Matching
+What does this instruction do?
+
+Numeric
+How many arguments does this function take?
+
+Short answer / multiple choice
+What does the code do?
+
+True/false
+Is the code correct?
+Which of the following is correct?
+
+Short answer
+Deeper understanding of RISC-V instructions (i.e. jal vs jalr)
+Immediates
+
+# Trace RISC-V code
+
+Value of register after execution
+Value in memory location
+
+# Write RISC-V code
+
+Ordering instructions
+Missing instruction
+
+minizing registers
+
+# Convert RISC-V to C
+
+Matching
+
+# Convert C to RISC-V
+
+Matching
+
+# Explain stack growth
+
+# Explain the purpose of an ISA
