@@ -1,0 +1,128 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "src/rv_assert.o",
+      "src/rv_assert.c"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_assert.c",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_assert.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "src/rv_int.o",
+      "src/rv_int.c"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_int.c",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_int.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "src/rv_stdio.o",
+      "src/rv_stdio.c"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_stdio.c",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_stdio.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "src/rv_str.o",
+      "src/rv_str.c"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_str.c",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_str.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "main.o",
+      "main.c"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/main.c",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "src/rv_start.o",
+      "src/rv_start.s"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_start.s",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_start.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "--target=riscv32",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-c",
+      "-o",
+      "src/rv_syscall.o",
+      "src/rv_syscall.s"
+    ],
+    "directory": "/home/calvin/Documents/uri/csc411-ta/hw6/rv",
+    "file": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_syscall.s",
+    "output": "/home/calvin/Documents/uri/csc411-ta/hw6/rv/src/rv_syscall.o"
+  }
+]
