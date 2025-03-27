@@ -5,7 +5,7 @@
 int dot(int *A, int *B, int n);
 
 int main(int argc, char *argv[]) {
-  if (argc < 3 || (argc & 1) != 1) {
+  if (argc == 0 || (argc & 1) != 1) {
     rv_puts(
         "Usage: ./main <A[0]> <B[0]> <A[1]> <B[1]> ... <A[n-1]> <B[n-1]>\n");
     rv_exit(1);

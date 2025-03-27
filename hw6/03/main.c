@@ -3,7 +3,8 @@
 #include "rv_str.h"
 #include "rv_syscall.h"
 
-int sum(int8_t *A, int n);
+void negative(int16_t *A, int n);
+int sum(int16_t *A, int n);
 
 int main(int argc, char *argv[]) {
   if (argc == 0) {
@@ -13,11 +14,12 @@ int main(int argc, char *argv[]) {
 
   int n = argc - 1;
 
-  int8_t A[n];
+  int16_t A[n];
   for (int i = 1; i < argc; ++i) {
     A[i - 1] = rv_str_to_int(argv[i]);
   }
 
+  negative(A, n);
   int t = sum(A, n);
 
   char buf[12];

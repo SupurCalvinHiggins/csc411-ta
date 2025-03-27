@@ -43,42 +43,118 @@ class TestQuestions(unittest.TestCase):
 
     def test_02(self):
         """#name(02) #score(10)"""
+        testcases = [
+            (["0", "0", "0", "1"], "0"),
+            (["1", "2", "3", "3"], "1"),
+            (["1", "3", "2", "3"], "1"),
+            (["2", "1", "3", "3"], "1"),
+            (["2", "3", "1", "3"], "1"),
+            (["3", "1", "2", "3"], "1"),
+            (["3", "2", "1", "3"], "1"),
+            (["3", "2", "2", "3"], "0"),
+        ]
+        self.check_all("02", testcases)
 
     def test_03(self):
         """#name(03) #score(5)"""
+        testcases = [
+            ([], "0"),
+            (["1"], "-1"),
+            (["-1"], "1"),
+            (["1", "2", "3"], "-6"),
+            (["-1", "2", "-3", "4", "-5"], "3"),
+        ]
+        self.check_all("03", testcases)
 
     def test_04(self):
         """#name(04) #score(5)"""
+        raise NotImplementedError
 
     def test_05(self):
         """#name(05) #score(4)"""
+        raise NotImplementedError
 
     def test_06(self):
         """#name(06) #score(10)"""
+        testcases = [([], "-559038737")]
+        self.check_all("06", testcases)
 
     def test_07(self):
         """#name(07) #score(10)"""
+        raise NotImplementedError
 
     def test_08(self):
         """#name(08) #score(5)"""
+        raise NotImplementedError
 
     def test_09(self):
         """#name(09) #score(5)"""
+        raise NotImplementedError
 
     def test_10(self):
         """#name(10) #score(3)"""
+        raise NotImplementedError
 
     def test_11(self):
         """#name(11) #score(10)"""
+        testcases = [
+            (["0"], "0"),
+            (["-1"], "1"),
+            (["1"], "-1"),
+            (["123"], "-123"),
+            (["-123"], "123"),
+        ]
+        self.check_all("11", testcases)
 
     def test_12(self):
         """#name(12) #score(10)"""
+        testcases = [
+            (["-5"], "0"),
+            (["-1"], "0"),
+            (["0"], "0"),
+            (["1"], "1"),
+            (["2"], "4"),
+            (["3"], "9"),
+            (["10"], "100"),
+        ]
+        self.check_all("12", testcases)
 
     def test_13(self):
         """#name(13) #score(5)"""
+        testcases = [
+            (["0", "0"], "0"),
+            (["0", "1"], "0"),
+            (["1", "0"], "0"),
+            (["0", "-1"], "0"),
+            (["-1", "0"], "0"),
+            (["1", "1"], "1"),
+            (["-1", "1"], "-1"),
+            (["1", "-1"], "-1"),
+            (["-1", "-1"], "1"),
+            (["11", "7"], "77"),
+            (["-3", "22"], "-66"),
+            (["14", "-12"], "-168"),
+            (["-10", "-11"], "110"),
+        ]
+        self.check_all("13", testcases)
 
     def test_14(self):
         """#name(14) #score(5)"""
+        testcases = [
+            ([], "0"),
+            (["0"], "0"),
+            (["1", "1", "100"], "102"),
+            (["-3", "4"], "1"),
+            (["-1", "-1", "-3"], "-5"),
+        ]
+        self.check_all("14", testcases)
 
     def test_15(self):
         """#name(15) #score(3)"""
+        testcases = [
+            ([], "0"),
+            (["0", "7"], "0"),
+            (["-1", "7"], "-7"),
+            (["0", "-1", "2", "3", "-7", "1", "-4", "-4", "-3", "5", "3", "3"], "9"),
+        ]
+        self.check_all("15", testcases)
