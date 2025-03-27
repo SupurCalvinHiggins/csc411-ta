@@ -77,7 +77,17 @@ class TestQuestions(unittest.TestCase):
 
     def test_05(self):
         """#name(05) #score(4)"""
-        raise NotImplementedError
+        testcases = [
+            (["hello", "h"], "0"),
+            (["hello", "ll"], "2"),
+            (["hello", "o"], "4"),
+            (["hello", "x"], ""),
+            (["helllldoworlld", "lld"], "4"),
+            (["hellllolddworlld", "lld"], "13"),
+            (["hellllolddworlld", "word"], ""),
+            (["helldlldolddworlld", "lldd"], ""),
+        ]
+        self.check_all("05", testcases)
 
     def test_06(self):
         """#name(06) #score(10)"""
