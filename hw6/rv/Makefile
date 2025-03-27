@@ -10,7 +10,7 @@ C_SRC = $(wildcard src/*.c) $(CLIENT_C_SRC)
 S_SRC = $(wildcard src/*.s) $(CLIENT_S_SRC)
 
 SRC = $(C_SRC) $(S_SRC)
-OBJ = $(C_SRC:.c=.o) $(S_SRC:.s=.o) 
+OBJ = $(C_SRC:.c=_c.o) $(S_SRC:.s=_s.o) 
 
 QEMU = qemu-riscv32
 
@@ -24,10 +24,10 @@ run: $(TARGET)
 $(TARGET): $(OBJ)
 	$(CC) $(LDFLAGS) -o $@ $(OBJ)
 
-%.o: %.c
+%_c.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-%.o: %.s
+%_s.o: %.s
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
