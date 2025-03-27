@@ -96,11 +96,25 @@ class TestQuestions(unittest.TestCase):
 
     def test_07(self):
         """#name(07) #score(10)"""
-        raise NotImplementedError
+        testcases = [
+            (["0"], "0"),
+            (["7"], "1"),
+            (["-3"], "-1"),
+            (["48879"], "1"),
+            (["-350"], "-1"),
+        ]
+        self.check_all("07", testcases)
 
     def test_08(self):
         """#name(08) #score(5)"""
-        raise NotImplementedError
+        testcases = [
+            ([], "0"),
+            (["0", "1", "2", "3", "4", "5"], "3"),
+            (["1", "0", "3", "1", "-6", "12", "-3", "-4", "0", "2"], "24"),
+            (["0", "1", "-2", "1", "-4", "-3", "2", "-1"], "8"),
+            (["1", "1", "-2", "1", "-4", "-4", "2", "-1"], "6"),
+        ]
+        self.check_all("08", testcases)
 
     def test_09(self):
         """#name(09) #score(5)"""
