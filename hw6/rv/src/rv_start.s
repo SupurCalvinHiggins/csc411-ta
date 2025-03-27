@@ -30,5 +30,4 @@ sp_init_done:
     call main
 
     # exit
-    li a0, 0
     call rv_exit
