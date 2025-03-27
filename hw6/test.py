@@ -36,8 +36,8 @@ class TestQuestions(unittest.TestCase):
         testcases = [
             (["0"], "-1"),
             (["-1"], "0"),
-            (["48879"], "-48879"),
-            (["-48879"], "48879"),
+            (["48879"], "-48880"),
+            (["-48880"], "48879"),
         ]
         self.check_all("01", testcases)
 
