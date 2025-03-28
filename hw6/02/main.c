@@ -5,7 +5,7 @@
 int twosum(int a, int b, int c, int t);
 
 int main(int argc, char *argv[]) {
-  if (argc != 4) {
+  if (argc != 5) {
     rv_puts("Usage: ./main <a> <b> <c> <t>\n");
     rv_exit(1);
   }

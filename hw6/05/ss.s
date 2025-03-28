@@ -24,6 +24,10 @@ L2:
 # char *ss(const char *s, const char *p);
 ss:
   # TODO: complete ss.c
+  addi sp, sp, -16
+  sw s0, 0(sp)
+  sw s1, 4(sp)
+  sw s2, 8(sp)
   addi s0, a0, 0
   addi s1, a1, 0
   addi s2, ra, 0
@@ -33,10 +37,16 @@ L3:
   call ms
   bne a0, x0, L4
   addi s0, s0, 1
-  bne s0, x0, L3
+  lbu t0, 0(s0)
+  bne t0, x0, L3
   addi a0, x0, 0
   j L5
 L4:
   addi a0, s0, 0
 L5:
-  jalr x0, s2, 0
+  addi ra, s2, 0
+  lw s0, 0(sp)
+  lw s1, 4(sp)
+  lw s2, 8(sp)
+  addi sp, sp, 16
+  ret
