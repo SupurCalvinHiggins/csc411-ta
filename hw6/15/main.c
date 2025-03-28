@@ -15,9 +15,9 @@ int main(int argc, char *argv[]) {
 
   int A[n];
   int B[n];
-  for (int i = 1; i < n; ++i) {
-    A[i] = rv_str_to_int(argv[i << 1]);
-    B[i] = rv_str_to_int(argv[(i << 1) + 1]);
+  for (int i = 0; i < n; ++i) {
+    A[i] = rv_str_to_int(argv[(i << 1) + 1]);
+    B[i] = rv_str_to_int(argv[(i << 1) + 2]);
   }
 
   int t = dot(A, B, n);
