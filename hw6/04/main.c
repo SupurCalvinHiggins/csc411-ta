@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
   }
 
   int mode = rv_str_to_int(argv[1]);
-  if (mode < 0 || mode >= 2) {
+  if (mode < 0 || mode > 2) {
     rv_puts("Usage: filter_mode must be 0, 1 or 2\n");
     rv_exit(1);
   }
